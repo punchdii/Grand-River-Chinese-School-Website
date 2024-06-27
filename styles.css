@@ -119,6 +119,7 @@ header nav ul li:hover .dropdown-content {
 
 /* Programs Section Styles */
 .programs {
+    background-color: #000;
     padding: 50px 20px;
     text-align: center;
 }
@@ -126,16 +127,21 @@ header nav ul li:hover .dropdown-content {
 .programs h2 {
     font-size: 2.5em;
     margin-bottom: 10px;
+    color: #ccc;
 }
 
 .programs p {
     font-size: 1.2em;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 0 30px;
     padding: 40px;
+    color: #ccc;
 }
 
 .programs-container {
+    padding: 40px;
+    border: #000;
+    border-radius: 50px;
+    background-color: #2d2d2d;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -144,31 +150,50 @@ header nav ul li:hover .dropdown-content {
 .program-column {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .program-column h3 {
-    padding-right: 40px;
-    font-size: 1.8em;
-    margin-right: 20px;
-    white-space: nowrap;
+    background-color: rgb(0, 0, 0);
+    color: #f4f4f4;
+    display: inline-block;
+    width: 100px;
+    /* Set the desired width */
+    height: 50px;
+    /* Set the desired height */
+    line-height: 50px;
+    /* Align text vertically */
+    text-align: center;
+    /* Align text horizontally */
+    border: 1px solid #000;
+    border-radius: 20px;
+    /* Optional: Add a border */
+    margin: 10px;
+    /* Optional: Add some margin between boxes */
+    padding: 20px;
 }
 
 .program-boxes {
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
-
 }
 
 .program-box {
+    font-weight: bold;
+    color: #ccc;
+    background-color: #000;
     flex: 0 0 200px;
     margin: 10px;
-    padding: 80px;
-    background-color: #f4f4f4;
+    padding: 30px;
     border: 1px solid #ccc;
     border-radius: 8px;
     text-align: center;
+}
+
+.botttom {
+    background-color: rgba(148, 4, 4, 0.402);
 }
 
 .arrow {
@@ -180,4 +205,28 @@ header nav ul li:hover .dropdown-content {
     cursor: pointer;
     border-radius: 90%;
     z-index: 1;
+}
+
+
+.footer-contentWrapper {
+    background-color: #1f1f1f;
+    color: #ccc;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+    justify-content: space-evenly;
+
+
+
+}
+
+.footer-block {
+    background-color: #1f1f1f;
+    color: #ccc;
+    flex-wrap: wrap;
+    padding: 30px;
+
+
+
 }
